@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
@@ -14,7 +14,7 @@
 </head>
 <body>
 	
-		<!-- верхнее меню -->
+<!-- верхнее меню -->
 		<div class="top-menu">			
 				<ul class="top-menu-list container">
 					<li><a href="#">О магазине</a></li>
@@ -25,7 +25,7 @@
 				</ul>			
 		</div>
 	
-		<!-- информация хэдера -->	
+<!-- информация хэдера -->	
 			<div class="header-info container">
 				<div class="logo"><a href="">
 					<img src="images/logo.png" alt=""></a>
@@ -45,7 +45,7 @@
 			</div>	
 		
 
-		<!-- второе меню -->
+<!--============= второе меню - Категории -->
 		<nav class="main-menu">
 			<div class="main-menu-block container">
 			<div class="main-menu-b1">
@@ -78,7 +78,7 @@
 				</ul>
 			</div>
 
-
+<!--========================= Кнопка Поиска -->
 			<div class="main-menu-b2">
 				<form method="GET"> <!-- Добавить action -->
    					<p><input type="search" name="q" placeholder="Поиск"> 
@@ -86,11 +86,15 @@
 
   				</form>
 			</div>
+<!--========================= Кнопка Поиска - конец -->
+
 			</div>							
 		</nav>
-	
+<!-- второе меню - Категории - конец  -->	
+
+
      
-<!-- Слайдер -->
+<!--================== Слайдер -->
 
 <div class="slider container">
     <div class="flexslider">
@@ -105,9 +109,14 @@
         </ul>
     </div>
 </div>
-<!-- Слайдер конец -->
+<!--==================== Слайдер конец -->
 
-<div class="content container">
+
+
+
+<div class="content container"><!--==================== Слайдер конец -->
+
+<!--==================== Фильтры начало -->	
 	<div class="filtr">
 		<form method="GET" action="Файл php куда будут приходить данные">
 			<div class="category">		
@@ -136,10 +145,10 @@
 						</ul>
 					</li>
 				</ul>
-		
-			
-		</div>
+			</div>
 
+
+<!--=============== Стоимость -->
 		<div class="price">
 			<p class="filtr-fon">Стоимость</p>			
 				<div class="block-price">
@@ -153,15 +162,16 @@
 			<div class="trackbar"></div>
 		</div>
 
+<!--=============== Производитель -->
 		<div class="manufacturer">
 			<p class="filtr-fon">Производитель</p>
 			<ul class="checkbox-manufacturer">
 				<li> <input type="checkbox" id="checkbrend1"><label for="checkbrend1">RealFlame</label></li>
-				
-
 			</ul>
 		</div>
 
+
+<!--=============== Ширина -->
 		<div class="size">
 			<p class="filtr-fon">Ширина, мм</p>			
 				<div class="width">
@@ -174,6 +184,7 @@
 				</div>
 			<div class="trackbar"></div>
 
+<!--=============== Высота -->
 			<p class="filtr-fon">Выста, мм</p>			
 				<div class="height">
 					<ul>
@@ -185,6 +196,7 @@
 				</div>
 			<div class="trackbar"></div>
 
+<!--=============== Глубина -->
 					<p class="filtr-fon">Глубина, мм</p>			
 				<div class="depht">
 					<ul>
@@ -197,7 +209,7 @@
 			<div class="trackbar"></div>
 		</div>
 
-
+<!--=============== Вид топлива -->
 		<div class="fuel">
 			<p class="filtr-fon">Вид топлива</p>			
 				<ul>
@@ -206,25 +218,27 @@
 				</ul>
 		</div>
 
+<!--=============== Материал -->
 		<div class="material">
 			<p class="filtr-fon">Материал</p>			
 				<ul>
 					<li> <input type="checkbox" id="material1"><label for="material1">Дерево</label></li>
 					<li> <input type="checkbox" id="material2"><label for="material2">Камень</label></li>
 					<li> <input type="checkbox" id="material3"><label for="material3">Стекло</label></li>
-
 				</ul>
 		</div>
 
+<!--=============== Цвет -->
 		<div class="color">
 			<p class="filtr-fon">Цвет</p>			
 				<ul>
 					<li> <input type="checkbox" id="color1"><label for="color1">Светлый</label></li>
 					<li> <input type="checkbox" id="color2"><label for="color2">Темный</label></li>
 					<li> <input type="checkbox" id="color3"><label for="color3">Цветной</label></li>
-
 				</ul>
 		</div>
+
+<!--=============== Обогрев -->		
 		<div class="heating">
 			<p class="filtr-fon">Обогрев</p>			
 				<ul>
@@ -233,6 +247,7 @@
 				</ul>
 		</div>
 
+<!--=============== Дополнительные функции -->	
 		<div class="functions">
 			<p class="filtr-fon">Дополнительные функции</p>			
 				<ul>
@@ -245,15 +260,16 @@
 					<li> <input type="checkbox" id="pdy"><label for="pdy">Пульт дистанционного управления</label></li>
 				</ul>
 		</div>
-			
 
 		</form>
 	</div>
+<!--==================== Фильтры - конец-->
+
 
 
 	<div class="section">
-		<!-- Карточка товара	 -->				
-	        <!--Card-->
+<!--============== Карточка товара-1	 -->				
+	        
 	             <a href="">
 	             	<div class="card">
 
@@ -275,6 +291,7 @@
 	            	</div>
 	             </a>
 
+<!--============== Карточка товара-2	 -->
 	                       <a href="">
 	             	<div class="card">
 
@@ -296,7 +313,7 @@
 	            	</div>	  	
 	             </a>
 
-
+<!--============== Карточка товара-3	 -->
 	             <a href="">
 	             	<div class="card">
 
@@ -318,7 +335,7 @@
 	            </div>
 	             </a>
 
-
+<!--============== Карточка товара-4	 -->
 	             <a href="">
 	             	<div class="card">
 
@@ -340,6 +357,7 @@
 	            </div>
 	             </a>
 
+<!--============== Карточка товара-5	 -->
 	                    <a href="">
 	             	<div class="card">
 
@@ -360,6 +378,8 @@
 	                </div>
 	            </div>
 	             </a>
+
+<!--============== Карточка товара-6	 -->
 	                       <a href="">
 	             	<div class="card">
 
@@ -381,6 +401,7 @@
 	            </div>
 	             </a>
 
+<!--============== Карточка товара-7	 -->
 	                       <a href="">
 	             	<div class="card">
 
@@ -427,23 +448,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-				
+<!--================ footer / Подвал	 -->
 		
 	<footer>	
 	<div class="footer container">
@@ -483,13 +488,13 @@
 			</div>
 	</div>
 	</footer>
-		 
+<!--================ footer / Подвал - конец	 -->		 
 	 
 	 
 	
 		  
 			
-
+<!--================ Скрипт для слайдера	 -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script defer src="js/jquery.flexslider-min.js"></script>
@@ -500,6 +505,7 @@
 	  });
 	});
 </script>	
+<!--================ Скрипт для слайдера	- конец -->
 
 </body>
 </html>
