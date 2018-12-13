@@ -1,0 +1,481 @@
+/*общие стили*/
+body {
+	margin: 0;
+	font-family: 'Arial', sans-serif;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.container {
+	width: 1250px;
+	margin: 0 auto;
+}
+
+/*верхнее меню*/
+.top-menu {
+	background-color: #8c796b;
+}
+.top-menu-list {
+	display: flex;
+	justify-content: flex-end;
+	height: 38px;
+	align-items: center;
+}
+.top-menu-list a {
+	color: #ffffff;
+	font-size: 14px;
+	text-decoration: none;
+	padding:12px;    
+}
+.top-menu-list a:hover {
+	text-decoration: underline;
+}
+
+/*хэдер*/
+.header-info {
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+	align-items: center;
+}
+.tel {
+  font-size: 32px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+.block-3-header{
+	display: flex;
+}
+.btn-header {
+  border-radius: 3px;
+  background-color: #ff7300;
+  width: 120px;
+  text-align: center;
+  align-content:center;
+  padding: 10px; 
+}
+.btn-header-1 {
+	margin-right: 20px;
+}
+.btn-header a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.img-btn-header {
+	width: 14px;
+	height: 14px;
+	margin-right: 3px;
+}
+
+/*второе меню*/
+.main-menu {
+	background-color: #53473e;
+  margin-bottom: 30px;
+}
+.main-menu-block {
+	display: flex;	
+	align-items: center;
+	height: 42px;
+	justify-content: space-between;	
+}
+.main-menu-list {
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+.main-menu-list li{
+	position: relative;
+}
+.menu-list-1:hover{
+	background-color: #8c796b;
+	padding:12px 20px;
+	transition: all 0.5s ease;
+}
+.menu-list-2:hover{
+	background-color: #ff7300;
+	padding:12px 20px;
+	transition: all 0.5s ease;
+}
+.main-menu-list a {
+	color: #ffffff;
+	font-size: 16px;
+	text-decoration: none;
+	font-weight: bold;
+	padding:13px 32px;
+}
+.submenu{
+	position: absolute;
+	margin-top: 11px;
+	left: 0;
+	width: 308px;
+	background-color: #8c796b;
+	padding: 12px 0;
+	display: none;
+}
+.submenu a{
+	display: block;
+	line-height: 20px;
+	font: 16px arial;
+}
+.submenu a:hover{
+	background-color: #fff8de;
+	color: #53473e;
+}
+.main-menu-list > li:hover .submenu {
+	display: block;
+	z-index: 3;
+}
+.submenu li{
+	position: relative;
+	z-index: 3;
+}
+.submenu1,
+.submenu2 {
+	position: absolute;
+	margin-top: -58px;
+	left: 308px;
+	width: 308px;	
+	padding: 12px 0;
+	display: none;
+	background-color: #fff8de;
+	}
+
+/*Подложка ссылок всплывающего меню*/
+.submenu2 a,
+.submenu1 a{
+	background-color: #fff8de;
+	color: #53473e;
+}
+.submenu1 a:hover,
+.submenu2 a:hover{
+	background-color: #8c796b;
+	color: #fff;
+}
+.main-menu-b1 li:hover > ul{
+	display: block;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====================================================================================================================
+ * Слайдер
+ * ====================================================================================================================*/
+.flexslider .slides img {
+  width: 100%;
+}
+.flexslider {  
+  position: relative;
+}
+/*Левая и правая стрелки*/
+.flex-direction-nav a {
+  width: 30px;
+  height: 30px;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+}
+.flex-direction-nav .flex-prev {
+  left: -50px;
+  text-indent: -9999px;
+  background: url(../images/icons8-шеврон-влево-filled-30.png) no-repeat 0 0;
+ }
+.flex-direction-nav .flex-next {
+  right: -50px; 
+  text-indent: 9999px;
+  background: url(../images/icons8-шеврон-вправо-filled-30.png) no-repeat 0 0; 
+}
+.flexslider:hover .flex-direction-nav .flex-prev {
+  left: 10px;
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+  right: 10px;
+}
+
+/*Нижние точки*/
+.flex-control-nav {
+  width: 100%;
+  text-align: center;
+}
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+}
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #666;
+  text-indent: -9999px;
+  border-radius: 20px;
+}
+
+/*Цвет точек*/
+.flex-control-paging li a:hover {
+  background: #333;
+}
+.flex-control-paging li a.flex-active {
+  background: #000;
+}
+
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+  }
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+  }
+}
+/* ====================================================================================================================
+ * Слайдер - конец
+ * ====================================================================================================================*/
+
+.content{
+	display: flex;
+	margin-top: 30px;
+}
+
+.filtr{
+/*  border: 1px solid red;*/
+  width: 270px;
+  height: auto;
+  flex-wrap: wrap;
+}
+.filtr-fon{
+  margin: 0 auto;
+  width: 260px;
+  font: 16px sans-serif;
+  font-weight: bold;
+  background: #fff8de; 
+  color: #53473e;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.category,
+.price,
+.manufacturer,
+.size,
+.fuel,
+.material,
+.color,
+.heating,
+.functions
+{
+  border-radius: 3px; 
+  box-shadow: 0px 0px 5.82px 0.28px #8c796b;
+  margin-bottom: 20px;
+}
+.category ul,
+.manufacturer ul,
+.fuel ul,
+.material ul,
+.color ul,
+.heating ul,
+.functions ul{
+  margin-top: 10px;
+}
+
+.category ul li,
+.fuel ul li,
+.material ul li,
+.manufacturer ul li,
+.color ul li,
+.heating ul li,
+.functions ul li{  
+  padding-bottom: 10px;
+  padding-left: 5px;
+  font: 14px sans-serif;
+ }
+
+.category ul li ul li{
+  padding-left: 30px;
+
+}
+.category ul li ul li:hover{
+/*  padding-left: 60px;*/
+/* padding-bottom: 10px;*/
+
+}
+.block-price,
+.width,
+.height,
+.depht{
+  margin-top: 10px;
+  padding-left: 10px;
+  font: 14px sans-serif;
+  font-weight: bold;
+}
+.block-price li,
+.width li,
+.height li,
+.depht li{
+	display: inline-flex;
+	margin-bottom:10px;
+}
+.block-price input,
+.width input,
+.height input,
+.depht input{
+	width: 120px;
+	height: 25px;
+	margin-left: 10px;
+	border-radius: 3px;
+	border: 1px solid #8c796b;
+}
+.manufacturer ul{
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.section{
+	width: 950px;
+	height: 1000px;
+	margin-left: 29px;
+	border: 1px solid red;
+}
+/*Карточка товара*/
+.card{
+  border-radius: 3px;
+  box-shadow: 0px 0px 5.82px 0.28px #8c796b;
+  width: 290px;
+  height: 465px;
+
+}
+.card-img-top{
+  padding: 25px 35px 20px 35px;
+}
+.text-center{
+  text-align: center;
+}
+h4{
+	margin: 0;
+	padding: 0;
+}
+.name-text{
+  text-decoration: none;
+  font-size: 15px;
+  color: #333;
+  font-weight: bold;
+}
+
+.black-text{
+  font-size: 11px;
+  color: rgb(51, 51, 51);
+  line-height: 1.607;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+.red-text{
+  font-size: 18px;
+  color: rgb(152, 68, 5);
+  font-weight: bold;
+  margin-bottom: 15px; 
+}
+.btn-cards {
+  border-radius: 3px;
+  background-color: #ff7300;
+  width: 120px;
+  text-align: center;
+  padding: 10px;
+  margin-left: 70px;
+}
+
+.btn-cards a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+/*Карточка товара конец*/
+
+
+
+
+/*Футер*/
+footer{
+	background-color: #8c796b;
+}
+.footer {
+	margin-top: 20px;
+	display: flex;
+	height: 120px;
+	color: #ffffff;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer-menu-list {
+	display: flex;	
+}
+.footer-menu-list a{
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 1.5;
+}
+.footer-menu,
+.footer-menu-1 {
+	padding-left: 32px;
+}
+.footer-contacts{
+	text-align: center;
+}
+.footer-contacts-tel {
+	font: bold 100% 'Arial';
+	font-size: 18px;
+	margin-bottom: 10px;
+	width: 600px;
+}
+.footer-contacts p{
+	font-size: 14px;
+	margin: 0;
+}
+.footer-social-network{
+	width: 50px;
+}
+.social-network{
+	width: 30px;
+	height: 30px;
+	padding-bottom: 5px;
+}
+.GKRF p{
+	font-size: 10px;
+	text-align: center;
+	margin: 0;
+	padding-right: 32px;
+}
+/*Конец футера*/
