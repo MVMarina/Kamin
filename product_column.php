@@ -1,37 +1,38 @@
-<!-- Grid row -->
-<!--  Карточка товара ===================-->       
-  <div class="col-lg-3">
+<!-- Карточка товара   -->        
+    <a href="">
+      <div class="card">
 
-<!-- ====== Карточка товара  -->
-    <a href=""></a>
-    <div class="card">
-
-<!-- Фото товара  -->                
+  <!-- Фото товара  -->  
         <img src="images/Dacota WT c Fobos Lux BL.png" class="card-img-top" alt="">
-                
-      <div class="text-center">
+                    
+        <div class="text-center">
+
 <!-- Название категории товара -->
         <h4><?php echo $item['cname']; ?></h4>
+
 <!-- Название товара -->            
-        <a href="?model=product&id=<?php echo $item['id']; ?>" class="name-text">
-        <h4><?php echo $item['name']; ?></h4>
-          </a>
+          <a href="?model=product&id=<?php echo $item['id']; ?>" class="name-text">
+          <h4><?php echo $item['name']; ?>
+          </h4>
+          </a>          
+          
 <!-- Цена --> 
-        <h4 class="black-text"> <del><?php echo $item['price']; ?> руб.</del></h4>
+          <h4 class="black-text"><del><?php echo $item['price']; ?> руб.</del>
+          </h4>
+
 <!-- Цена со скидкой-->
-        <h4 class="red-text"><del><?php echo $item['prise_discount']; ?> руб.</h4>
-      </div>
+          <h4 class="red-text"><?php echo $item['prise_discount']; ?> руб.
+          </h4>          
+        </div>
 
 <!-- Кнопка Купить-->
-      <div class="btn-cards">
-        <a href="">КУПИТЬ
-        </a>
-      </div>
+        <div class="btn-cards">
+          <a href="">КУПИТЬ
+          </a>
+        </div>
 
-    </div>
-  </div>  
-   
-<!--  ======================== Карточка товара ===================-->
+      </div>
+    </a>
 
 
 
