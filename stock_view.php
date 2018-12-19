@@ -3,7 +3,6 @@
      
 <?php include 'slider.php' ?>
 
-
 <div class="content container">
 
 <!--=================== Фильтры	================= -->
@@ -14,24 +13,24 @@
 <!--================= Карточки товаров =========-->
 	<div class="section">
 		<?php  
-		// var_dump($results);
-		// if(isset($results['products']) && $results['products']['priсe'] !== NULL)
-		foreach ($results['products'] as $item)
+
+		if($results['products'])
+			
+			foreach ($results['products'] as $item)
+				// if(!empty($item['priсe']))
 		{
-			include 'product_cell.php';
+			include 'product_cell_copy.php.php';
+		}
+		else
+		{
+            echo "<p> <h2>В данной категории пока нет товаров...</h2></p>";
 		}
 		
-            echo "<p> <h2>В данной категории пока нет товаров...</h2></p>";
+
 		?>
 		
 	</div>
 
 </div>
 
-	 
-	 
 <?php include 'footer.php' ?>	
-		  
-	
-
-

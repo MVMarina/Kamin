@@ -1,6 +1,6 @@
 <!-- Слайдер -->
 
-<section class="slider container">
+<div class="slider container">
     <div class="flexslider">
         <ul class="slides">
             <li>
@@ -12,5 +12,5 @@
                         
         </ul>
     </div>
-</section>
+</div>
 <!-- Слайдер конец -->

@@ -36,15 +36,8 @@
 			</div>
 	</div>
 	</footer>
-		 
-	 
-	 
-	
-		  
-			
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script defer src="js/jquery.flexslider-min.js"></script>
 <script type="text/javascript">
 	$(window).load(function(){
@@ -53,6 +46,7 @@
 	  });
 	});
 </script>	
+
 
 </body>
 </html>

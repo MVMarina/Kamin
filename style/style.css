@@ -1,8 +1,9 @@
-/* ============== общие стили*/
+/*общие стили*/
 body {
 	margin: 0;
 	font-family: 'Arial', sans-serif;
 }
+
 
 ul {
 	margin: 0;
@@ -14,7 +15,7 @@ ul {
 	margin: 0 auto;
 }
 
-/* ================ верхнее меню*/
+/*верхнее меню*/
 .top-menu {
 	background-color: #8c796b;
 }
@@ -34,7 +35,7 @@ ul {
 	text-decoration: underline;
 }
 
-/* ================ хэдер*/
+/*хэдер*/
 .header-info {
 	display: flex;
 	justify-content: space-between;
@@ -73,7 +74,7 @@ ul {
 	margin-right: 3px;
 }
 
-/* ================= второе меню*/
+/*второе меню*/
 .main-menu {
   background-color: #53473e;
   margin-bottom: 30px;
@@ -146,7 +147,7 @@ ul {
 	background-color: #fff8de;
 	}
 
-/* =================== Подложка ссылок всплывающего меню*/
+/*Подложка ссылок всплывающего меню*/
 .submenu2 a,
 .submenu1 a{
 	background-color: #fff8de;
@@ -180,6 +181,27 @@ ul {
 .main-menu-b2 input:focus{
 	width: 480px;
 }
+input:-webkit-autofill, 
+select:-webkit-autofill:focus { 
+transition: background-color 5000s ease-in-out 0s;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -196,7 +218,7 @@ ul {
 .flexslider {  
   position: relative;
 }
-/*-------------- Левая и правая стрелки*/
+/*Левая и правая стрелки*/
 .flex-direction-nav a {
   width: 30px;
   height: 30px;
@@ -223,7 +245,7 @@ ul {
   right: 10px;
 }
 
-/* ------------------ Нижние точки*/
+/*Нижние точки*/
 .flex-control-nav {
   width: 100%;
   text-align: center;
@@ -241,7 +263,7 @@ ul {
   border-radius: 20px;
 }
 
-/* --------------------- Цвет точек*/
+/*Цвет точек*/
 .flex-control-paging li a:hover {
   background: #333;
 }
@@ -266,14 +288,11 @@ ul {
  * Слайдер - конец
  * ====================================================================================================================*/
 
-
 .content{
 	display: flex;
 	margin-top: 30px;
 }
 
-
-/*========================= Фильтры* ===============/
 .filtr{
 /*  border: 1px solid red;*/
   width: 270px;
@@ -366,12 +385,10 @@ ul {
 	margin-top: 10px;
 	padding-bottom: 10px;
 }
-/*==================== Фильтры - конец=====================*/
 
 
 
 
-/*========================= Фильтры ==================*/
 
 .section{
 	display: flex;
@@ -381,14 +398,15 @@ ul {
 /*	border: 1px solid red;*/
 
 
+}
 
+/*Карточка товара*/
 
-
-
+.card-1 a{
+	text-decoration: none;
 
 }
 
-/*===================== Карточка товара ================ */
 .card{
   border-radius: 3px;
   box-shadow: 0px 0px 5.82px 0.28px #8c796b;
@@ -396,8 +414,9 @@ ul {
   height: 445px;
   padding: 0;
   margin: 0;
-  margin: 30px 0 0 36px;
+  margin: 30px 0 0 30px;  
 }
+
 .card-img-top{
   padding: 25px 35px 20px 35px;
 }
@@ -407,16 +426,21 @@ ul {
 h4{
 	margin: 0;
 	padding: 0;
+
 }
 .name-text{
   text-decoration: none;
   font-size: 15px;
   color: #333;
   font-weight: bold;
+  padding-right: 30px;
+  padding-left: 30px;
+  height: 45px;
+
 }
 
 .black-text{
-  font-size: 11px;
+  font-size: 14px;
   color: rgb(51, 51, 51);
   line-height: 1.607;
   text-align: center;
@@ -438,18 +462,20 @@ h4{
   margin-left: 70px;
 }
 
-.btn-cards a{
+.btn-cards p {
   text-decoration: none;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
+  padding: 0;
+  margin: 0;
 }
-/*================= Карточка товара конец ======================*/
+/*Карточка товара конец*/
 
 
 
 
-/*=================== Футер =======================*/
+/*Футер*/
 footer{
 	background-color: #8c796b;
 }
@@ -501,19 +527,14 @@ footer{
 	margin: 0;
 	padding-right: 32px;
 }
-/* ==================== Конец футера ================ */
+/*Конец футера*/
 
 
-
-
-
-
-
-/* ================ Страница КОНТАКТЫ* от Лены ==================
+/*================ Страница КОНТАКТЫ от Лены ==================*/
 .container-main-contacts {
 	display: flex;
 	width: 1250px;
-	margin: 0 auto;
+	margin: 60px;
 }
 .maps {
 	display: inline-block;
@@ -537,4 +558,5 @@ footer{
 }
 
 /* ================ Страница КОНТАКТЫ* - конец ==================
+
 
