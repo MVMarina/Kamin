@@ -16,6 +16,7 @@ $view_file = strtolower($model_name).'_view.php';
 // echo $model_file;
 // echo $view_file;
 
+
 ///Если файл модели существует, подключаем
 if(file_exists($model_file))
 	include $model_file;
