@@ -441,6 +441,7 @@ h4{
 
 .black-text{
   font-size: 14px;
+  height: 18px;
   color: rgb(51, 51, 51);
   line-height: 1.607;
   text-align: center;
@@ -453,6 +454,14 @@ h4{
   font-weight: bold;
   margin-bottom: 15px; 
 }
+.final{
+margin-top: 43px;
+  font-size: 18px;
+  color: rgb(152, 68, 5);
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
 .btn-cards {
   border-radius: 3px;
   background-color: #ff7300;

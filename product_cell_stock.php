@@ -18,27 +18,10 @@
 				</div>
 			</div>";
 	}
-	// else
-	// {
-	// 	echo "<div class=\"card\">
-	// 	    <img src=\"images/Dacota WT c Fobos Lux BL.png\" class=\"card-img-top\" alt=\"\">
-	// 		<div class=\"text-center\">
- //             	<h4>{$item['cname']}</h4>
-	// 			<div class=\"name-text\"><h4>{$item['name']}</h4></div>
-	// 			<h4 class=\"red-text\"> {$item['priсe_discount']} руб.</h4>
-	// 		</div>
-	// 		<div class=\"btn-cards\">
-	// 			<a href=\"\">КУПИТЬ
-	// 			</a>
-	// 		    </div>
-	// 		 </div>";
-	// }
+	
 	
  ?>	        
 					
-				
-
-<!-- Кнопка Купить-->				
 				
 
 	    </a>

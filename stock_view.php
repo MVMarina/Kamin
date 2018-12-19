@@ -3,6 +3,7 @@
      
 <?php include 'slider.php' ?>
 
+
 <div class="content container">
 
 <!--=================== Фильтры	================= -->
@@ -19,7 +20,7 @@
 			foreach ($results['products'] as $item)
 				// if(!empty($item['priсe']))
 		{
-			include 'product_cell_copy.php.php';
+			include 'product_cell_stock.php';
 		}
 		else
 		{
@@ -33,4 +34,10 @@
 
 </div>
 
+	 
+	 
 <?php include 'footer.php' ?>	
+		  
+			
+
+
