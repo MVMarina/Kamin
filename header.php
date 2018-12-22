@@ -55,8 +55,8 @@
 				 		<ul class="submenu">
 							<li><a href="">Электрокамин</a>
 								<ul class="submenu1">
-									<li><a href="">Пристенные / Напольные</a></li>
-									<li><a href="">Угловые</a></li>
+									<li><a href="index.php?model=floor">Пристенные / Напольные</a></li>
+									<li><a href="index.php?model=corner">Угловые</a></li>
 									<li><a href="">Настенные / Встроенные</a></li>
 								</ul>
 							</li>

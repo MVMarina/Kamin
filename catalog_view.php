@@ -20,7 +20,7 @@
 			foreach ($results['products'] as $item)
 				// if(!empty($item['priсe']))
 		{
-			include 'product_cell_stock.php';
+			include 'product_cell.php';
 		}
 		else
 		{

@@ -13,6 +13,7 @@
 					<h4 class=\"black-text\"><del>{$item['priсe']} руб.</del></h4>
 					<h4 class=\"red-text\"> {$item['priсe_discount']} руб.</h4>
 				</div>
+				
 				<div class=\"btn-cards\">
 					<p>КУПИТЬ</p>
 				</div>

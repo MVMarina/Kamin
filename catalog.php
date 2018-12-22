@@ -20,7 +20,7 @@
 
 if($results['products'])
             foreach ($results['products'] as $item) {
-              include 'product_column.php'; }
+              include 'product_cell.php'; }
       
  ?>
 <!--Фото - Название - Цена -->                 

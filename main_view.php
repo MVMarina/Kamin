@@ -15,7 +15,6 @@
 	<div class="section">
 		<?php  
 		// var_dump($results);
-		// if(isset($results['products']) && $results['products']['priсe'] !== NULL)
 		foreach ($results['products'] as $item)
 		{
 			include 'product_cell.php';
