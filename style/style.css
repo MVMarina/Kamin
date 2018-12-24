@@ -22,7 +22,7 @@ ul {
 .top-menu-list {
 	display: flex;
 	justify-content: flex-end;
-	height: 38px;
+	height: 28px;
 	align-items: center;
 }
 .top-menu-list a {
@@ -39,7 +39,7 @@ ul {
 .header-info {
 	display: flex;
 	justify-content: space-between;
-	height: 100px;
+	height: 80px;
 	align-items: center;
 }
 .tel {
@@ -74,7 +74,9 @@ ul {
 	margin-right: 3px;
 }
 
-/*второе меню*/
+/*=====================================++=========== 
+===         второе всплывающее меню          ======== 
+===================================================*/
 .main-menu {
   background-color: #53473e;
   margin-bottom: 30px;
@@ -177,6 +179,7 @@ ul {
 	margin-right: 3px;
 	height: 22px;
 	width: 212px;
+
 }
 .main-menu-b2 input:focus{
 	width: 480px;
@@ -185,16 +188,7 @@ input:-webkit-autofill,
 select:-webkit-autofill:focus { 
 transition: background-color 5000s ease-in-out 0s;  
 }
-
-
-
-
-
-
-
-
-
-
+/*========== второе всплывающее меню - конец ===========*/
 
 
 
@@ -214,6 +208,7 @@ transition: background-color 5000s ease-in-out 0s;
  * ====================================================================================================================*/
 .flexslider .slides img {
   width: 100%;
+  height: 300px;
 }
 .flexslider {  
   position: relative;
@@ -288,11 +283,15 @@ transition: background-color 5000s ease-in-out 0s;
  * Слайдер - конец
  * ====================================================================================================================*/
 
+
+
+
 .content{
 	display: flex;
 	margin-top: 30px;
 }
 
+/*============== ФИЛЬТРЫ =======================*/
 .filtr{
 /*  border: 1px solid red;*/
   width: 270px;
@@ -385,7 +384,7 @@ transition: background-color 5000s ease-in-out 0s;
 	margin-top: 10px;
 	padding-bottom: 10px;
 }
-
+/*============== ФИЛЬТРЫ  - конец =======================*/
 
 
 
@@ -400,13 +399,10 @@ transition: background-color 5000s ease-in-out 0s;
 
 }
 
-/*Карточка товара*/
-
+/* ====================== Карточки-мини товаров на страницу*/
 .card-1 a{
 	text-decoration: none;
-
 }
-
 .card{
   border-radius: 3px;
   box-shadow: 0px 0px 5.82px 0.28px #8c796b;
@@ -423,10 +419,17 @@ transition: background-color 5000s ease-in-out 0s;
 .text-center{
   text-align: center;
 }
+h3 {
+	margin: 0;
+	padding: 0;
+}
 h4{
 	margin: 0;
 	padding: 0;
-
+}
+h5{
+	margin: 0;
+	padding: 0;
 }
 .name-text{
   text-decoration: none;
@@ -436,7 +439,6 @@ h4{
   padding-right: 30px;
   padding-left: 30px;
   height: 45px;
-
 }
 
 .black-text{
@@ -452,16 +454,16 @@ h4{
   font-size: 18px;
   color: rgb(152, 68, 5);
   font-weight: bold;
+  text-align: center;
   margin-bottom: 15px; 
 }
 .final{
-margin-top: 43px;
+  margin-top: 43px;
   font-size: 18px;
   color: rgb(152, 68, 5);
   font-weight: bold;
   margin-bottom: 15px;
 }
-
 .btn-cards {
   border-radius: 3px;
   background-color: #ff7300;
@@ -470,7 +472,6 @@ margin-top: 43px;
   padding: 10px;
   margin-left: 70px;
 }
-
 .btn-cards p {
   text-decoration: none;
   color: #ffffff;
@@ -479,12 +480,153 @@ margin-top: 43px;
   padding: 0;
   margin: 0;
 }
-/*Карточка товара конец*/
+/* ==================== Карточки-мини товаров на страницу конец*/
+
+
+
+/* ====================== Карточка-макси товара в отдельном окне*/
+.card_goods { 
+	display: flex;
+	flex-wrap: wrap;
+/*	border-radius: 3px; 
+	box-shadow: 0px 0px 5.82px 0.28px #8c796b; */
+	width: 1250px; 
+	height: 750px; 
+	padding: 0; 
+	margin: 0; 
+	margin-top: 15px;
+}
+/*-------- Название товара ---*/
+.card_goods_name {
+	width: 1249px;
+	height: 40px;
+	/*border: 1px solid red;*/
+}
+
+/*-------- Блок с ФОТО товара ---*/
+.photo_video{
+	display: flex;
+	flex-wrap: wrap;
+	width: 380px;
+}
+.card_goods_photo {
+	width: 380px;
+/*	display: flex;*/
+/*	flex-wrap: wrap;*/
+	height: 325px; 
+	border: 1px solid red;
+	align-content: center;
+	margin-bottom: 0;
+}
+.card_goods_photo_1 {
+/*	width: 380px;*/
+	height: 217px;
+	padding: 0 82px 0 82px;
+	/*border: 1px solid red;*/
+	margin-bottom: 20px;
+}
+.card_goods_photo_2 {
+/*	border: 1px solid red;*/
+	text-align: center;
+}
+/*=========== Блок Видео ================== */
+.block_wrap_video {
+	width: 380px;
+/*	border: 1px solid red;*/
+	border-radius: 3px; 
+	box-shadow: 0px 0px 5.82px 0.28px #8c796b;
+	margin-top: 0;
+}
+.video{
+	padding-top: 0;
+}
+
+
+/*-------- Блок с описанием товара ---*/
+.card_goods_description {
+	width: 675px;
+	height: 620px; 
+	/*border: 1px solid red;*/
+}
+.card_goods_name h3 {
+	margin-top: 20px;
+	margin-left: 42px;
+}
+.card_goods_description p {
+	width: 600px;
+	text-align: justify;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+/*-------- Блок с характеристиками торвара ---*/
+.characteristic_1 td {
+	font-size: 13px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid lightgrey;
+}
+.block_wrap-234 {
+	width: 550px;
+	height: 650px;
+	margin: 0 30px 0 25px;
+	border-radius: 3px; 
+	box-shadow: 0px 0px 2.82px 0.18px #8c796b;
+}
+.block_wrap-234 table {
+	width: 530px;
+	margin-left: 10px;
+	margin-top: 25px;
+}
+
+
+/*-------- Блок - ЦЕНА -------- */
+.block_wrap {
+	width: 249px;
+	height: 217px;
+	margin: 0;
+	border-radius: 3px; 
+	box-shadow: 0px 0px 5.82px 0.28px #8c796b;
+}
+.block_wrap_fon {
+	font: 13px sans-serif;
+	font-weight: bold;
+	background: #fff8de; 
+	padding: 10px 0 10px 0;
+	color: #53473e;
+	text-align: center;
+	margin: 0;
+	/*margin-bottom: 25px;*/
+}
+.button {
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+}
+.price_card{
+	margin-top: 25px;
+}
+.red_final {
+	font-size: 35px;
+	margin-top: 10px;
+	color: #009999;
+}
+.compare {
+	width: 34px;
+}
+.order {
+	width: 80px;
+	margin-left: 20px;
+}
+/* =============== Карточка-макси товара в отдельном окне - конец*/
 
 
 
 
-/*Футер*/
+
+
+/* ================ Футер ===============*/
 footer{
 	background-color: #8c796b;
 }
@@ -536,7 +678,8 @@ footer{
 	margin: 0;
 	padding-right: 32px;
 }
-/*Конец футера*/
+/*================ Конец футера ===================*/
+
 
 
 /*================ Страница КОНТАКТЫ от Лены ==================*/
@@ -565,7 +708,6 @@ footer{
 	margin-top: 50px;
 	margin-left: 30px;
 }
-
 /* ================ Страница КОНТАКТЫ* - конец ==================
 
 
